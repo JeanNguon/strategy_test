@@ -18,6 +18,12 @@ namespace test_strategy
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Connector", action = "placeOrder", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "close",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Connector", action = "closeOrder", id = UrlParameter.Optional }
+            );
         }
     }
 }

@@ -21,7 +21,7 @@ namespace test_strategy.Models.connector
         }
         
 
-        void IConnector.placeOrder(long volume, string product)
+        long IConnector.placeOrder(long volume, string product)
         {
 
             // return bool

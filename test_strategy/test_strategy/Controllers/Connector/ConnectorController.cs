@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using test_strategy.Models.connector;
+using System.Web.UI.WebControls;
 
 namespace test_strategy.Controllers
 {
     public class ConnectorController : Controller
     {
-
         private Connector connector;
 
         public ActionResult placeOrder()

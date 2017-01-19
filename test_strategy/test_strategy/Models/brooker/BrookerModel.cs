@@ -14,7 +14,11 @@ namespace test_strategy.Models.brooker
 
         public int closeOrder(long volume, string product)
         {
-            return 1;
+            if (volume > 0)
+            {
+                return 1;                
+            }
+            return -1;
         }
     }
 }
