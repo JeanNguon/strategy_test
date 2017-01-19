@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace test_strategy.Models
 {
-    interface IConnector
+    public interface IConnector
     {
-        void placeOrder(long volume, String product);
-        Int32 closeOrder(long volume, String product);
+        long placeOrder(long volume, String product);
+        long closeOrder(long volume, String product);
     }
 }

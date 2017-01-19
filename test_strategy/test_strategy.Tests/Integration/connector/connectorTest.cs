@@ -5,38 +5,35 @@ using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using test_strategy;
+using test_strategy.Models.connector;
+using test_strategy.Models;
 using test_strategy.Controllers;
 
 namespace test_strategy.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class ConnectorTest
     {
         [TestMethod]
-        public void placeOrder()
+        public void TestcloseOrderView()
         {
-            // Arrange
-            ConnectorController controller = new ConnectorController();
+            var controller = new ConnectorController();
+            var result = controller.closeOrder() as ViewResult;
+            var connector = (Connector)result.ViewData.Model;
+            long closeOrder = connector.closeOrder(1L, "test");
+            Assert.AreEqual("Laptop", closeOrder);
 
-            // Act
-            ViewResult result = controller.placeOrder() as ViewResult;
-
-            // Assert
-            Assert.IsNotNull(result);
         }
 
 
         [TestMethod]
         public void closeOrder()
         {
+
             // Arrange
             ConnectorController controller = new ConnectorController();
 
-            // Act
-            ViewResult result = controller.closeOrder() as ViewResult;
-
-            // Assert
-            Assert.IsNotNull(result);
+            
         }
     }
 }
