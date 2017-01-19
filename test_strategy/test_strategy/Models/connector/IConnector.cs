@@ -8,7 +8,7 @@ namespace test_strategy.Models
 {
     interface IConnector
     {
-        void placeOrder(long volume, String product);
+        long placeOrder(long volume, String product);
         Int32 closeOrder(long volume, String product);
     }
 }
