@@ -49,7 +49,8 @@ namespace test_strategy.Tests.Controllers
         [TestMethod]
         public void closeOrder()
         {
-            // Arrange
+            // Not implement yet
+            AssertFailedException;
         }
     }
 }
