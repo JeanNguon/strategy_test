@@ -138,3 +138,7 @@ F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy.Tests\bin\Debug
 F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\fr\Microsoft.AspNet.Identity.Core.resources.dll
 F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy.Tests\obj\Debug\test_strategy.Tests.dll
 F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy.Tests\obj\Debug\test_strategy.Tests.pdb
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\Castle.Core.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\Moq.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\Castle.Core.xml
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\Moq.xml
