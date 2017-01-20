@@ -9,6 +9,10 @@ namespace test_strategy.Models.brooker
     {
         public long placeOrder(long volume, string product)
         {
+            if (volume < 1)
+            {
+                return 0L;
+            }
             return volume;
         }
 
