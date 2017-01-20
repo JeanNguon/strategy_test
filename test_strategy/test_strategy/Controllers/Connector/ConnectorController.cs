@@ -19,7 +19,7 @@ namespace test_strategy.Controllers
       
         public ActionResult placeOrder()
         {
-            
+            ViewData["message"] = "Hello World!";
             ViewBag.Message = "placeOrder";
             return View();
         }

@@ -15,14 +15,18 @@ namespace test_strategy.Tests.Controllers
     public class ConnectorTest
     {
         [TestMethod]
-        public void TestcloseOrderView()
+        public void TestPlaceOrderView()
         {
             var controller = new ConnectorController();
-            var result = controller.closeOrder() as ViewResult;
+            var result = controller.placeOrder() as ViewResult;
             var connector = (Connector)result.ViewData.Model;
-            long closeOrder = connector.closeOrder(1L, "test");
-            Assert.AreEqual("Laptop", closeOrder);
-
+            if (connector != null){
+                long closeOrder = connector.closeOrder(1L, "test");
+                Assert.AreNotEqual("Laptop", closeOrder);
+            }
+            else{
+                Assert.Fail();
+            }
         }
 
 
