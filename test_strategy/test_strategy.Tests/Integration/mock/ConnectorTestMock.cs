@@ -21,7 +21,6 @@ namespace test_strategy.Models.connector
         [TestCleanup]
         public void TestCleanup()
         {
-            this.mock.VerifyAll();
             this.mockRepository.VerifyAll();
         }
 
