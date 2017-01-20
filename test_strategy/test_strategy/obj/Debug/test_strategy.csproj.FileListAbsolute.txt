@@ -218,3 +218,11 @@ F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy\bin\fr\Microsof
 F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy\obj\Debug\test_strategy.csprojResolveAssemblyReference.cache
 F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy\obj\Debug\test_strategy.dll
 F:\Projects\testUnitCS\strategy_test\test_strategy\test_strategy\obj\Debug\test_strategy.pdb
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\AIT.VisualStudio.TestTools.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\Castle.Core.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\Moq.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\AIT.VisualStudio.TestTools.xml
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\Castle.Core.xml
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\Moq.xml
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy\bin\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

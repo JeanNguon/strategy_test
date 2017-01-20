@@ -5,15 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 using test_strategy.Models.connector;
 using System.Web.UI.WebControls;
+using test_strategy.Models;
 
 namespace test_strategy.Controllers
 {
     public class ConnectorController : Controller
     {
-        private Connector connector;
+        private IConnector connector;
 
-        public ConnectorController() {
-            this.connector = new Connector();
+        public ConnectorController(IConnector connector) {
+            this.connector = connector;
         }
 
 

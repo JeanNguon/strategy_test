@@ -37,5 +37,11 @@ namespace test_strategy.Models.connector
         {
             return this.IConnector.placeOrder(volume, product);
         }
+
+
+        public void setConnector(IConnector iConnector)
+        {
+            this.IConnector = iConnector;
+        }
     }
 }
