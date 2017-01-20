@@ -12,8 +12,15 @@ namespace test_strategy.Controllers
     {
         private Connector connector;
 
+        public ConnectorController() {
+            this.connector = new Connector();
+        }
+
+
+      
         public ActionResult placeOrder()
         {
+            ViewData["message"] = "Hello World!";
             ViewBag.Message = "placeOrder";
             return View();
         }

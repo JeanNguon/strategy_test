@@ -13,25 +13,19 @@ namespace test_strategy.Models.connector
             
         }
 
-
-        int IConnector.closeOrder(long volume, string product)
+        public long closeOrder(long volume, string product)
         {
-           
-            throw new NotImplementedException();
+            return GetVolume(volume);
         }
-        
 
-        long IConnector.placeOrder(long volume, string product)
+        private static long GetVolume(long volume)
         {
+            return volume;
+        }
 
-            // return bool
-
-           /*
-            * param: volume
-            */
-
-            //return
-            throw new NotImplementedException();
+        public long placeOrder(long volume, string product)
+        {
+            return GetVolume(volume);
         }
     }
 }
