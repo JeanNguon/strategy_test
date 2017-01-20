@@ -208,7 +208,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\brooker\BrookerModel.cs" />
+    <Compile Include="Models\broker\BrokerModel.cs" />
     <Compile Include="Models\connector\connector.cs" />
     <Compile Include="Models\connector\IConnector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

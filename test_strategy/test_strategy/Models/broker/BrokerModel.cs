@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace test_strategy.Models.brooker
+namespace test_strategy.Models.broker
 {
-    public class BrookerModel : IConnector
+    public class BrokerModel : IConnector
     {
         public long placeOrder(long volume, string product)
         {
@@ -16,7 +16,7 @@ namespace test_strategy.Models.brooker
             return volume;
         }
 
-        public int closeOrder(long volume, string product)
+        public long closeOrder(long volume, string product)
         {
             if (volume > 0)
             {
