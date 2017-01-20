@@ -7,8 +7,12 @@ namespace test_strategy.Models.broker
 {
     public class BrokerModel : IConnector
     {
-        public long placeOrder(long volume, string product)
+        public long placeOrder(long volume, string product, bool isConnected)
         {
+            if (isConnected == false)
+            {
+                return -1L;
+            }
             if (volume < 1)
             {
                 return 0L;
@@ -16,13 +20,17 @@ namespace test_strategy.Models.broker
             return volume;
         }
 
-        public long closeOrder(long volume, string product)
+        public long closeOrder(long volume, string product, bool isConnected)
         {
+            if (isConnected == false)
+            {
+                return -1L;
+            }
             if (volume > 0)
             {
                 return 1;                
             }
-            return -1;
+            return 0;
         }
     }
 }
