@@ -12,7 +12,10 @@ namespace test_strategy.Controllers
     public class ConnectorController : Controller
     {
         private IConnector connector;
+        public ConnectorController()
+        {
 
+        }
         public ConnectorController(IConnector connector) {
             this.connector = connector;
         }
