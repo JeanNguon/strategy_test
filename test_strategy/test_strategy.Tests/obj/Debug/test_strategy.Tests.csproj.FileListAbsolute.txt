@@ -142,3 +142,9 @@ C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Te
 C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\Moq.dll
 C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\Castle.Core.xml
 C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\Moq.xml
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\FluentAssertions.Core.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\FluentAssertions.dll
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\FluentAssertions.pdb
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\FluentAssertions.xml
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\FluentAssertions.Core.pdb
+C:\Users\j.nguon\JEAN NGUON\Projets\strategy_test\test_strategy\test_strategy.Tests\bin\Debug\FluentAssertions.Core.xml

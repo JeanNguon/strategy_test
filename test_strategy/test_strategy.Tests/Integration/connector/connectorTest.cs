@@ -50,7 +50,6 @@ namespace test_strategy.Tests.Controllers
         public void closeOrder()
         {
             // Arrange
-            ConnectorController controller = new ConnectorController();
         }
     }
 }
