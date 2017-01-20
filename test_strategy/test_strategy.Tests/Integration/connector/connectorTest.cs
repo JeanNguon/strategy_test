@@ -21,7 +21,7 @@ namespace test_strategy.Tests.Controllers
             var result = controller.placeOrder() as ViewResult;
             var connector = (Connector)result.ViewData.Model;
             if (connector != null){
-                long closeOrder = connector.closeOrder(1L, "test");
+                long closeOrder = connector.closeOrder(1L, "test", true);
                 Assert.AreNotEqual("Laptop", closeOrder);
             }
             else{
