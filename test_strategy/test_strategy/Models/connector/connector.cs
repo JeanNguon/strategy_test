@@ -13,7 +13,7 @@ namespace test_strategy.Models.connector
             
         }
 
-        public long closeOrder(long volume, string product, bool isConnected)
+        public long closeOrder(long volume, string product)
         {
             return GetVolume(volume);
         }
@@ -22,8 +22,8 @@ namespace test_strategy.Models.connector
         {
             return volume;
         }
-
-        public long placeOrder(long volume, string product, bool isConnected)
+        
+        public long placeOrder(long volume, string product)
         {
             return GetVolume(volume);
         }

@@ -10,7 +10,7 @@ namespace test_strategy.Models.broker
         public void PlaceOrderTest1()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.placeOrder(1L, "rhum", true);
+            long result = Brooker.placeOrder(1L, "rhum");
             Assert.AreEqual(1L, result);
 
         }
@@ -18,36 +18,29 @@ namespace test_strategy.Models.broker
         public void PlaceOrderTest2()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.placeOrder(10L, "rhum", true);
+            long result = Brooker.placeOrder(10L, "rhum");
             Assert.AreEqual(10L, result);
         }
         [TestMethod] // Fail expected
         public void PlaceOrderTest3()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.placeOrder(-10L, "rhum", true);
+            long result = Brooker.placeOrder(-10L, "rhum");
             Assert.AreEqual(-10L, result);
         }
         [TestMethod] // Success expected
         public void PlaceOrderTest4()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.placeOrder(-10L, "rhum", true);
+            long result = Brooker.placeOrder(-10L, "rhum");
             Assert.AreEqual(0L, result);
-        }
-        [TestMethod] // Fail expected
-        public void PlaceOrderTest5()
-        {
-            BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.placeOrder(10L, "rhum", false);
-            Assert.AreEqual(10L, result);
         }
 
         [TestMethod] // Success expected
         public void CloseOrderTest1()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.closeOrder(1L, "rhum", true);
+            long result = Brooker.closeOrder(1L, "rhum");
             Assert.AreEqual(1L, result);
 
         }
@@ -55,29 +48,22 @@ namespace test_strategy.Models.broker
         public void CloseOrderTest2()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.closeOrder(10L, "rhum", true);
+            long result = Brooker.closeOrder(10L, "rhum");
             Assert.AreEqual(1, result);
         }
         [TestMethod] // Fail expected
         public void CloseOrderTest3()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.closeOrder(0L, "rhum", true);
+            long result = Brooker.closeOrder(0L, "rhum");
             Assert.AreEqual(1, result);
         }
         [TestMethod] // Success expected
         public void CloseOrderTest4()
         {
             BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.closeOrder(0L, "rhum", true);
-            Assert.AreEqual(0, result);
-        }
-        [TestMethod] // Success expected
-        public void CloseOrderTest5()
-        {
-            BrokerModel Brooker = new BrokerModel();
-            long result = Brooker.closeOrder(0L, "rhum", false);
-            Assert.AreEqual(-1L, result);
+            long result = Brooker.closeOrder(0L, "rhum");
+            Assert.AreEqual(-1, result);
         }
     }
 }
