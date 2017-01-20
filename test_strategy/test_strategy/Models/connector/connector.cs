@@ -17,12 +17,12 @@ namespace test_strategy.Models.connector
         {
             return GetVolume(volume);
         }
-
+           
         private static long GetVolume(long volume)
         {
             return volume;
         }
-
+        
         public long placeOrder(long volume, string product)
         {
             return GetVolume(volume);

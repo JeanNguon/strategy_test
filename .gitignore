@@ -1,0 +1,7 @@
+﻿cat .gitignore
+test_strategy/.vs
+test_strategy/test_strategy/obj
+test_strategy/test_strategy/bin
+test_strategy/test_strategy.Tests/obj
+test_strategy/test_strategy.Tests/bin
+test_strategy/packages
