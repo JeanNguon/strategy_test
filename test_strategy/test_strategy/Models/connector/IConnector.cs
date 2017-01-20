@@ -8,7 +8,7 @@ namespace test_strategy.Models
 {
     public interface IConnector
     {
-        long placeOrder(long volume, String product);
-        long closeOrder(long volume, String product);
+        long placeOrder(long volume, String product, bool isConnected);
+        long closeOrder(long volume, String product, bool isConnected);
     }
 }
