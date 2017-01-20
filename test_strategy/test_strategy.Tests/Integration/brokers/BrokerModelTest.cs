@@ -6,7 +6,7 @@ namespace test_strategy.Models.broker
     public class BrokerModelTest
     {
 
-        [TestMethod]
+        [TestMethod] // Success expected
         public void PlaceOrderTest1()
         {
             BrokerModel Brooker = new BrokerModel();
@@ -14,22 +14,29 @@ namespace test_strategy.Models.broker
             Assert.AreEqual(1L, result);
 
         }
-        [TestMethod]
+        [TestMethod] // Success expected
         public void PlaceOrderTest2()
         {
             BrokerModel Brooker = new BrokerModel();
             long result = Brooker.placeOrder(10L, "rhum");
             Assert.AreEqual(10L, result);
         }
-        [TestMethod]
+        [TestMethod] // Fail expected
         public void PlaceOrderTest3()
+        {
+            BrokerModel Brooker = new BrokerModel();
+            long result = Brooker.placeOrder(-10L, "rhum");
+            Assert.AreEqual(-10L, result);
+        }
+        [TestMethod] // Success expected
+        public void PlaceOrderTest4()
         {
             BrokerModel Brooker = new BrokerModel();
             long result = Brooker.placeOrder(-10L, "rhum");
             Assert.AreEqual(0L, result);
         }
 
-        [TestMethod]
+        [TestMethod] // Success expected
         public void CloseOrderTest1()
         {
             BrokerModel Brooker = new BrokerModel();
@@ -37,15 +44,22 @@ namespace test_strategy.Models.broker
             Assert.AreEqual(1L, result);
 
         }
-        [TestMethod]
+        [TestMethod] // Success expected
         public void CloseOrderTest2()
         {
             BrokerModel Brooker = new BrokerModel();
             long result = Brooker.closeOrder(10L, "rhum");
             Assert.AreEqual(1, result);
         }
-        [TestMethod]
+        [TestMethod] // Fail expected
         public void CloseOrderTest3()
+        {
+            BrokerModel Brooker = new BrokerModel();
+            long result = Brooker.closeOrder(0L, "rhum");
+            Assert.AreEqual(1, result);
+        }
+        [TestMethod] // Success expected
+        public void CloseOrderTest4()
         {
             BrokerModel Brooker = new BrokerModel();
             long result = Brooker.closeOrder(0L, "rhum");
