@@ -19,14 +19,28 @@ namespace test_strategy.Tests.Controllers
         {
             var controller = new ConnectorController();
             var result = controller.placeOrder() as ViewResult;
-            var connector = (Connector)result.ViewData.Model;
-            if (connector != null){
-                long closeOrder = connector.closeOrder(1L, "test");
-                Assert.AreNotEqual("Laptop", closeOrder);
+            if (result != null)
+            {
+                if (result.ViewData.Model != null)
+                {
+                    var connector = (Connector)result.ViewData.Model;
+                    if (connector != null)
+                    {
+                        long closeOrder = connector.closeOrder(1L, "test");
+                        Assert.AreNotEqual("Laptop", closeOrder);
+                    }else{
+                        Assert.Fail();
+                    }
+                }
+            }else {
+                 
             }
-            else{
-                Assert.Fail();
-            }
+        }
+
+
+        public void IsBankBroker(Connector connector)
+        {
+            Assert.IsNotNull(connector.IConnector);
         }
 
 
